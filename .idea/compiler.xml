@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="thymeleaf" />
+        <module name="springboot-sql-data" />
+        <module name="spring-security" />
+        <module name="proxy" />
+        <module name="springboot-redis" />
+        <module name="springboot-mybatis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="proxy" target="1.5" />
+      <module name="spring-security" target="1.8" />
+      <module name="springboot-mybatis" target="1.8" />
+      <module name="springboot-redis" target="11" />
+      <module name="springboot-sql-data" target="1.8" />
+      <module name="thymeleaf" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-sql-data" options="-parameters" />
+      <module name="thymeleaf" options="-parameters" />
+    </option>
+  </component>
+</project>
